@@ -1,0 +1,15 @@
+package exp;
+
+public class ExampleClass  implements Example{
+	Example example=new ExampleClass();
+	@Override
+	public void display() {
+		System.out.println(example.y);
+		
+	}
+	public static void main(String[] args) {
+		
+		
+	}
+
+}

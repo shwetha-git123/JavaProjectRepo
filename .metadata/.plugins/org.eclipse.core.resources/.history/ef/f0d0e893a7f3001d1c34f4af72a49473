@@ -1,0 +1,18 @@
+package inneerclass;
+
+abstract class Person{
+	abstract void eat();
+}
+class Tom extens Person{
+	void eat() {
+		System.out.println("Tom is eating");
+	}
+}
+public class Solution {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

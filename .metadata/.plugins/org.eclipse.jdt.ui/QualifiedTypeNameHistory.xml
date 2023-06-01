@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="java.lang.RuntimeException"/>
+    <fullyQualifiedTypeName name="customexception.StudentNotFoundException"/>
+    <fullyQualifiedTypeName name="java.util.Comparator"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="customsorting.SortStudentByAge"/>
+    <fullyQualifiedTypeName name="customsorting.SortStudentByName"/>
+    <fullyQualifiedTypeName name="customsorting.SortStudentByMarks"/>
+    <fullyQualifiedTypeName name="customsorting.SortStudentById"/>
+    <fullyQualifiedTypeName name="java.util.LinkedList"/>
+    <fullyQualifiedTypeName name="java.util.Map"/>
+    <fullyQualifiedTypeName name="java.util.LinkedHashMap"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="customexception.EmployeeNotFoundException"/>
+    <fullyQualifiedTypeName name="java.util.Set"/>
+    <fullyQualifiedTypeName name="customsorting.SortEmployeeByAge"/>
+    <fullyQualifiedTypeName name="customsorting.SortEmployeeByName"/>
+    <fullyQualifiedTypeName name="java.util.Collections"/>
+    <fullyQualifiedTypeName name="customsorting.SortEmployeeById"/>
+    <fullyQualifiedTypeName name="customsorting.SortEmployeeBySalary"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.lang.FunctionalInterface"/>
+    <fullyQualifiedTypeName name="exp.Example"/>
+    <fullyQualifiedTypeName name="sdbms.Student"/>
+</qualifiedTypeNameHistroy>

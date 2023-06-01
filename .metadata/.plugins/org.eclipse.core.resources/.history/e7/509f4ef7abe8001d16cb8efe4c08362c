@@ -1,0 +1,30 @@
+package com;
+import java.util.Scanner;
+public class Solution {
+
+	public static void main(String[] args) {
+		Scanner s=new Scanner(System.in);
+		System.out.println("Welcome to ICICI Bank");
+		System.out.println("--------------------");
+Bank bank=new BankImpl(2000);
+while(true) {
+	System.out.println("1:Deposit\n2:Withdraw\n3:Check Balance\n4:Exit");
+	System.out.println("Enter Choice");
+	int choice=s.nextInt();
+	switch(choice) {
+	case 1:bank.deposit(s.nextInt());
+	break;
+	case 2:bank.withDraw(s.nextInt());
+	break;
+	case 3:bank.checkBalance();
+	break;
+	case 4:System.exit(0);
+	break;
+	default:System.out.println("Invalid choice");
+	}
+}
+
+
+	}
+
+}

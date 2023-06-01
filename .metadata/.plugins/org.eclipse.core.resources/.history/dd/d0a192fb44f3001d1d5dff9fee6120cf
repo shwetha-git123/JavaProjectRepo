@@ -1,0 +1,153 @@
+package edbms;
+
+import java.util.LinkedHashMap;
+import java.util.LinkedList;
+import java.util.Map;
+import java.util.Scanner;
+import java.util.Set;
+
+import customexception.EmployeeNotFoundException;
+
+public class EmployeeManagementSystemImplementation implements EmployeeManagementSystem {
+Scanner s=new Scanner(System.in);
+
+Map<String,Employee> eb=new LinkedHashMap<String,Employee>();
+
+
+	@Override
+	public void addEmployee() {
+		System.out.println("Enter Employee name");		
+		String name=s.next();
+		
+		System.out.println("Enter Employee Age");
+		int age=s.nextInt();
+		
+		System.out.println("Enter Employee salary");
+		double salary=s.nextDouble();
+		
+		Employee emp=new Employee(name,age,salary);
+		
+		eb.put(emp.getId(), emp);
+		 
+		System.out.println("Employee records added !!");
+		
+		System.out.println("Employee id="+emp.getId());
+		System.out.println();
+	}
+
+	@Override
+	public void displayEmployee() {
+
+System.out.println("Enter Employee id:");
+String id=s.next().toLowerCase();
+Employee emp=eb.get(id);
+
+if(eb.containsKey(emp.getId())) {
+	System.out.println("Employee record found!!");
+	System.out.println(emp);
+}
+else {
+	try {
+		throw new EmployeeNotFoundException("Invalid id");
+	}
+	catch(Exception e) {
+		System.out.println(e.getMessage());
+	}
+}
+		
+	}
+
+	@Override
+	public void displayAllEmployee() {
+		if(!eb.isEmpty()) {
+			System.out.println("Employee records are as follows...");
+			Set<String> keys=eb.keySet(); 
+			for(String key:keys) {
+			Employee emp=eb.get(key);
+			System.out.println(emp);
+			}
+		}
+		else {
+			try {
+				throw new EmployeeNotFoundException("No employee found");
+			}
+			catch(Exception e) {
+				System.out.println(e.getMessage());
+			}
+		}
+		
+	}
+
+	@Override
+	public void removeEmployee() {
+		System.out.println("Enter employee id");
+		
+		String id=s.next();
+		id=id.toUpperCase();
+
+		if(eb.containsKey(id)) {
+			System.out.println("Student record found");
+			System.out.println(eb.get(id));
+			eb.remove(id);
+			System.out.println("Employee record deleted successfully!!");
+		}
+		else {
+			try {
+				throw new EmployeeNotFoundException("No employee found with id="+id);
+			}
+			catch(Exception e) {
+				System.out.println(e.getMessage());
+			}
+		}
+		
+	}
+
+	@Override
+	public void removeAllEmployee() {
+		if(!eb.isEmpty()) {
+			System.out.println("no of students records:"+eb.size());
+			eb.clear();
+			System.out.println("All Employee records deleted successfully!!");
+		}
+		else {
+		try {
+			throw new EmployeeNotFoundException("Employee database is empty");
+		}
+		catch(Exception e) {
+			System.out.println(e.getMessage());
+		}
+	}
+		
+	}
+
+	@Override
+	public void updateEmployee() {
+		
+		
+	}
+
+	@Override
+	public void countEmployee() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void sortEmployee() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void findEmployeeWithHighSalary() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void findEmployeeWithLowSalary() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

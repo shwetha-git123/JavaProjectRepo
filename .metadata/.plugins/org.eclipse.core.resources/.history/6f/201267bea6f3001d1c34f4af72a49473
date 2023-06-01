@@ -1,0 +1,11 @@
+package inneerclass;
+
+abstract public class Person {
+abstract void eat();
+}
+
+class Tom extends Person{
+	void eat() {
+		System.out.println("Tom is eating");
+	}
+}

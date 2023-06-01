@@ -1,0 +1,10 @@
+package exp;
+
+public class MainClassexample {
+
+	public static void main(String[] args) {
+		Example example=new ExampleClass();
+example.display();
+	}
+
+}

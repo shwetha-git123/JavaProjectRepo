@@ -1,0 +1,25 @@
+package inneerclass;
+ 
+interface Calculator{
+	void add(int a,int b);
+	void mul(int a,int b);
+}
+
+public class Mainclass {
+
+	public static void main(String[] args) {
+
+Calculator calsi=new Calculator() {
+	public void add(int a,int b) {
+		System.out.println("Sum of "+a+" and "+b+"="+(a+b));
+	}
+	
+	public void mul(int a,int b) {
+		System.out.println("product of "+a+" and "+b+"="+(a*b));
+	}
+};
+calsi.add(10, 30);
+calsi.mul(4, 90);
+	}
+
+}

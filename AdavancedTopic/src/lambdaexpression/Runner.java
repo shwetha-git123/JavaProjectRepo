@@ -1,0 +1,18 @@
+package lambdaexpression;
+
+@FunctionalInterface
+interface Employee{
+	void work();
+}
+
+public class Runner {
+
+	public static void main(String[] args) {
+
+		Employee emp=()->{
+			System.out.println("Employee is working");
+		};
+		emp.work();
+	}
+
+}
